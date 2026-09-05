@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_contact_email,feed_contact_url,feed_lang,feed_start_date,feed_end_date,feed_version
+SMART,https://smartbus.org,crowe@smartbus.org,https://smartbus.org/about/contact,en,20260907,20270103,S1000147
