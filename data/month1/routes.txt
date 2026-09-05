@@ -1,0 +1,45 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+125,1,125,Fort-Eureka,,3,,59327d,ffffff
+140,1,140,Southshore,,3,,00a2be,ffffff
+160,1,160,Downriver,,3,,932274,ffffff
+200,1,200,Michigan Local,,3,,59327d,ffffff
+210,1,210,Michigan Local,,3,,59327d,ffffff
+250,1,250,Ford Road,,3,,00a2be,ffffff
+255,1,255,Ford Road Express,,3,,e0792a,ffffff
+261,1,261,FAST Michigan,,3,,0055b7,ffffff
+275,1,275,Telegraph South,,3,,00a2be,ffffff
+280,1,280,Western Wayne Crosstown,,3,,00a2be,ffffff
+305,1,305,Grand River,,3,,00a2be,ffffff
+350,1,350,Wixom,,3,,932274,ffffff
+375,1,375,Telegraph North,,3,,00a2be,ffffff
+405,1,405,Northwestern Highway,,3,,00a2be,ffffff
+415,1,415,Greenfield,,3,,932274,ffffff
+420,1,420,Southfield,,3,,932274,ffffff
+430,1,430,Main Street,,3,,932274,ffffff
+450,1,450,Woodward Local,,3,,59327d,ffffff
+460,1,460,Woodward Local,,3,,59327d,ffffff
+461,1,461,FAST Woodward,,3,,ce2a2a,ffffff
+462,1,462,FAST Woodward,,3,,ce2a2a,ffffff
+492,1,492,Rochester,,3,,00a2be,ffffff
+494,1,494,Dequindre,,3,,932274,ffffff
+495,1,495,John R,,3,,932274,ffffff
+510,1,510,Van Dyke,,3,,59327d,ffffff
+525,1,525,Groesbeck,,3,,932274,ffffff
+530,1,530,Schoenherr,,3,,e0792a,ffffff
+550,1,550,Garfield,,3,,932274,ffffff
+560,1,560,Gratiot Local,,3,,59327d,ffffff
+561,1,561,FAST Gratiot,,3,,67a333,ffffff
+610,1,610,Kercheval-Harper,,3,,59327d,ffffff
+615,1,615,Jefferson,,3,,932274,ffffff
+620,1,620,Charlevoix,,3,,e0792a,ffffff
+635,1,635,East Jefferson,,3,,e0792a,ffffff
+710,1,710,Nine Mile Crosstown,,3,,00a2be,ffffff
+730,1,730,Ten Mile Crosstown,,3,,00a2be,ffffff
+740,1,740,Twelve Mile Crosstown,,3,,00a2be,ffffff
+759,1,759,Highland Road,,3,,00a2be,ffffff
+760,1,760,13 Mile / 14 Mile Crosstown,,3,,00a2be,ffffff
+780,1,780,15 Mile Crosstown,,3,,00a2be,ffffff
+790,1,790,Pontiac Crosstown,,3,,00a2be,ffffff
+805,1,805,Grand River P&R,,3,,e0792a,ffffff
+830,1,830,Downriver P&R,,3,,e0792a,ffffff
+851,1,851,West Bloomfield-Farmington Hills P&R,,3,,e0792a,ffffff
