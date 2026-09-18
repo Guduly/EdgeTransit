@@ -25,11 +25,27 @@ def train():
 
     for epoch in range(EPOCHS):
         model.train()
+        total_loss = 0.0
         for X, y in train_loader:
             optimizer.zero_grad()
             output = model(X)
             loss = crit(output,y)
             loss.backward()
             optimizer.step()
+            total_loss += loss.item() * len(y)
 
-        print(f"Epoch {epoch+1}/{EPOCHS}  loss={loss.item():.4f}")
+        avg_loss = total_loss/n_train
+
+        model.eval()
+        correct = 0
+
+        with torch.no_grad():
+            for X, y in val_loader:
+                preds = model(X).argmax(dim=1)
+                correct += (preds==y).sum().item()
+
+        val_acc = correct / n_val
+        print(f"Epoch {epoch+1}/{EPOCHS}  loss={loss.item():.4f} val_acc={val_acc:.4f}")
+
+if __name__ == "__main__":
+    train()
