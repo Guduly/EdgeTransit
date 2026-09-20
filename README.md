@@ -148,7 +148,9 @@ python -m src.uart.stream --port /dev/ttyACM0
 ## Status
 
 - [x] GTFS feature extraction pipeline
-- [ ] MLP training with CUDA mixed-precision
-- [ ] INT8 quantization + ONNX export
-- [ ] STM32CubeAI code generation
+- [x] MLP training with CUDA mixed-precision
+- [x] INT8 quantization + ONNX export
+- [x] Matrix Mult for Prediction
+- [ ] STM32 Config (UART + GPIO)
+- [ ] Makefile Config
 - [ ] UART streaming + MCU validation
