@@ -1,9 +1,5 @@
 #pragma once
-#include <stdint.h>
 
-#define FC2_BIAS_SCALE 0.004415f
-#define FC2_BIAS_SIZE 16
-
-static const int8_t FC2_BIAS[16] = {
-    -35, 39, 127, 14, 15, -52, -32, -21, 105, 89, 77, 99, 51, -38, -29, 48
+static const float FC2_BIAS[16] = {
+    -0.156025f, 0.173735f, 0.560753f, 0.059785f, 0.065034f, -0.231562f, -0.143487f, -0.090999f, 0.462660f, 0.391575f, 0.338309f, 0.435060f, 0.226516f, -0.167650f, -0.127321f, 0.211735f
 };

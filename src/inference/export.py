@@ -5,36 +5,23 @@ from src.model.mlp import TransitMLP
 
 OUT_DIR = "src/stm32/weights"
 
-def write_header(name, arr, scale, out_dir):
+def write_header(name, arr, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     upper = name.upper()
     path  = os.path.join(out_dir, f"{name}.h")
 
     with open(path, "w") as f:
-        f.write(f"#pragma once\n")
-        f.write(f"#include <stdint.h>\n\n")
-        f.write(f"#define {upper}_SCALE {scale:.6f}f\n")
-
-        # write shape defines
+        f.write(f"#pragma once\n\n")
         if arr.ndim == 2:
-            f.write(f"#define {upper}_ROWS {arr.shape[0]}\n")
-            f.write(f"#define {upper}_COLS {arr.shape[1]}\n\n")
-            f.write(f"static const int8_t {upper}[{arr.shape[0]}][{arr.shape[1]}] = {{\n")
+            f.write(f"static const float {upper}[{arr.shape[0]}][{arr.shape[1]}] = {{\n")
             for row in arr:
-                f.write("    {" + ", ".join(str(v) for v in row) + "},\n")
+                f.write("    {" + ", ".join(f"{v:.6f}f" for v in row) + "},\n")
         else:
-            f.write(f"#define {upper}_SIZE {arr.shape[0]}\n\n")
-            f.write(f"static const int8_t {upper}[{arr.shape[0]}] = {{\n")
-            f.write("    " + ", ".join(str(v) for v in arr) + "\n")
-
+            f.write(f"static const float {upper}[{arr.shape[0]}] = {{\n")
+            f.write("    " + ", ".join(f"{v:.6f}f" for v in arr) + "\n")
         f.write("};\n")
 
     print(f"[OK] wrote {path}")
-
-def quantize(arr):
-    scale    = np.max(np.abs(arr)) / 127.0
-    int8_arr = np.clip(np.round(arr / scale), -128, 127).astype(np.int8)
-    return int8_arr, scale
 
 def export():
     model = TransitMLP()
@@ -54,8 +41,7 @@ def export():
     }
 
     for name, tensor in layers.items(): 
-        q, scale = quantize(tensor)
-        write_header(name, q, scale, OUT_DIR)
+        write_header(name, tensor, OUT_DIR)
 
 if __name__ == "__main__":
     export()
