@@ -12,8 +12,8 @@ Classifies live transit stop events as **On-Time**, **Late**, or **Severely Late
 |---|---|
 | Data | GTFS Static (SMART), Python, Pandas |
 | Training | PyTorch, CUDA mixed-precision (AMP) |
-| Quantization | ONNX, STM32CubeAI |
-| Deployment | STM32F446RE, CMSIS-NN, C |
+| Quantization | ONNX |
+| Deployment | STM32F446RE, Custom Inference Engine, C |
 | Host pipeline | Python, pyserial |
 
 ---
@@ -31,7 +31,7 @@ MLP Training (PyTorch)      8 → 32 → 16 → 3  (~800 params)
 CUDA mixed-precision
        │
        ▼
-INT8 Quantization           ONNX → STM32CubeAI → C
+INT8 Quantization           ONNX → C
        │
        ▼
 STM32F446RE                 Inference under 128KB SRAM
