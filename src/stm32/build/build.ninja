@@ -71,6 +71,15 @@ build CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/gcc/startu
   OBJECT_FILE_DIR = CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/gcc
   TARGET_SUPPORT_DIR = CMakeFiles/edgetransit.elf.dir
 
+build CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/system_stm32f4xx.c.obj: C_COMPILER__edgetransit.2eelf_unscanned_ /home/dubious/Projects/edgetransit/src/stm32/cmsis-device-f4/Source/Templates/system_stm32f4xx.c || cmake_object_order_depends_target_edgetransit.elf
+  DEFINES = -DSTM32F446xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/system_stm32f4xx.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2
+  INCLUDES = -I/home/dubious/Projects/edgetransit/src/stm32/Core -I/home/dubious/Projects/edgetransit/src/stm32/weights -I/home/dubious/Projects/edgetransit/src/stm32/cmsis-device-f4/Include -I/home/dubious/Projects/edgetransit/src/stm32/CMSIS_6/CMSIS/Core/Include -I/home/dubious/Projects/edgetransit/src/stm32/stm32f4xx-hal-driver/Inc
+  OBJECT_DIR = CMakeFiles/edgetransit.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates
+  TARGET_SUPPORT_DIR = CMakeFiles/edgetransit.elf.dir
+
 build CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj: C_COMPILER__edgetransit.2eelf_unscanned_ /home/dubious/Projects/edgetransit/src/stm32/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c || cmake_object_order_depends_target_edgetransit.elf
   DEFINES = -DSTM32F446xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj.d
@@ -124,9 +133,9 @@ build CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart
 #############################################
 # Link the executable edgetransit.elf
 
-build edgetransit.elf: CXX_EXECUTABLE_LINKER__edgetransit.2eelf_ CMakeFiles/edgetransit.elf.dir/Core/main.cpp.obj CMakeFiles/edgetransit.elf.dir/Core/inference.cpp.obj CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/gcc/startup_stm32f446xx.s.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart.c.obj
+build edgetransit.elf: CXX_EXECUTABLE_LINKER__edgetransit.2eelf_ CMakeFiles/edgetransit.elf.dir/Core/main.cpp.obj CMakeFiles/edgetransit.elf.dir/Core/inference.cpp.obj CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/gcc/startup_stm32f446xx.s.obj CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/system_stm32f4xx.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart.c.obj
   FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -O2 -fno-exceptions -fno-rtti
-  LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T/home/dubious/Projects/edgetransit/src/stm32/STM32F446RE.ld -nostartfiles -Wl,--gc-sections
+  LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T/home/dubious/Projects/edgetransit/src/stm32/STM32F446RE.ld --specs=nosys.specs --specs=nano.specs -Wl,--gc-sections
   OBJECT_DIR = CMakeFiles/edgetransit.elf.dir
   POST_BUILD = cd /home/dubious/Projects/edgetransit/src/stm32/build && arm-none-eabi-objcopy -O binary edgetransit.elf edgetransit.bin
   PRE_LINK = :
