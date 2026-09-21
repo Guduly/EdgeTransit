@@ -1,0 +1,14 @@
+# ninja log v7
+1	4	1790009402208977595	CMakeFiles/edgetransit.elf.dir/cmsis-device-f4/Source/Templates/gcc/startup_stm32f446xx.s.obj	8613be41d275447e
+0	26	1790009595613242704	CMakeFiles/edgetransit.elf.dir/Core/inference.cpp.obj	1a94af73f60e8807
+1	32	1790010331571274630	CMakeFiles/edgetransit.elf.dir/Core/main.cpp.obj	7bbe6048af96570c
+1	44	1790010331571763183	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj	9a2dd804243986ab
+1	52	1790010331571843134	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_cortex.c.obj	264595b4f554971e
+1	59	1790010331571930569	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_gpio.c.obj	ab33c1214b99148d
+1	214	1790010331572086303	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart.c.obj	afcded648c974062
+1	32	1790010544916477131	CMakeFiles/edgetransit.elf.dir/Core/main.cpp.obj	7bbe6048af96570c
+1	45	1790010544917863257	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal.c.obj	9a2dd804243986ab
+1	53	1790010544917941885	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_cortex.c.obj	264595b4f554971e
+1	59	1790010544918017619	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_gpio.c.obj	ab33c1214b99148d
+1	80	1790010544918096718	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_rcc.c.obj	1b400824ea5bc42
+1	209	1790010544918177782	CMakeFiles/edgetransit.elf.dir/stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart.c.obj	afcded648c974062

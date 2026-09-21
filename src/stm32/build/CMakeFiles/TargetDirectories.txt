@@ -1,0 +1,3 @@
+/home/dubious/Projects/edgetransit/src/stm32/build/CMakeFiles/edgetransit.elf.dir
+/home/dubious/Projects/edgetransit/src/stm32/build/CMakeFiles/edit_cache.dir
+/home/dubious/Projects/edgetransit/src/stm32/build/CMakeFiles/rebuild_cache.dir

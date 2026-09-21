@@ -5,7 +5,6 @@
 #include "../weights/fc2_bias.h"
 #include "../weights/fc3_weight.h"
 #include "../weights/fc3_bias.h"
-#include "../CMSIS-NN/Include/arm_nnfunctions.h"
 
 
 static float buf1[32]; 
@@ -19,7 +18,7 @@ int8_t predict(const float* input){
   for(int i = 0; i < 32; i++){
        sum = 0; 
        for(int j = 0; j < 8; j++)
-           sum += FC1_WEIGHTS[i][j] * input[j] + FC1_BIAS[i];
+           sum += FC1_WEIGHT[i][j] * input[j] + FC1_BIAS[i];
 
        buf1[i] = sum > 0 ? sum : 0;
    } 
@@ -27,7 +26,7 @@ int8_t predict(const float* input){
    for(int i = 0; i < 16; i++){
        sum = 0; 
        for(int j = 0; j < 32; j++)
-           sum += FC2_WEIGHTS[i][j] * buf1[j] + FC2_BIAS[i];
+           sum += FC2_WEIGHT[i][j] * buf1[j] + FC2_BIAS[i];
 
        buf2[i] = sum > 0 ? sum : 0;
    }
@@ -35,7 +34,7 @@ int8_t predict(const float* input){
    for(int i = 0; i < 3; i++){
        sum = 0; 
        for(int j = 0; j < 16; j++)
-           sum += FC3_WEIGHTS[i][j] * buf2[j] + FC3_BIAS[i];
+           sum += FC3_WEIGHT[i][j] * buf2[j] + FC3_BIAS[i];
 
        buf3[i] = sum; 
    }
