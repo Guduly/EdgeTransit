@@ -151,6 +151,6 @@ python -m src.uart.stream --port /dev/ttyACM0
 - [x] MLP training with CUDA mixed-precision
 - [x] INT8 quantization + ONNX export
 - [x] Matrix Mult for Prediction
-- [ ] STM32 Config (UART + GPIO)
-- [ ] Makefile Config
+- [x] STM32 Config (UART + GPIO)
+- [x] Makefile Config
 - [ ] UART streaming + MCU validation
