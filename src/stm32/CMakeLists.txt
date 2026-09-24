@@ -32,6 +32,9 @@ file(GLOB HAL_SOURCES
     stm32f4xx-hal-driver/Src/stm32f4xx_hal_gpio.c
     stm32f4xx-hal-driver/Src/stm32f4xx_hal_uart.c
     stm32f4xx-hal-driver/Src/stm32f4xx_hal_cortex.c
+    stm32f4xx-hal-driver/Src/stm32f4xx_hal_dma.c
+    stm32f4xx-hal-driver/Src/stm32f4xx_hal_pwr.c
+    stm32f4xx-hal-driver/Src/stm32f4xx_hal_pwr_ex.c
 )
 
 # Your sources (FIXED: system_stm32f4xx.c explicitly added back)

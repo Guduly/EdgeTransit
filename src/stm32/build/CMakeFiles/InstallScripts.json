@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/dubious/Projects/edgetransit/src/stm32/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

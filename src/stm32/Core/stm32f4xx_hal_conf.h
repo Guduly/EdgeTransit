@@ -11,6 +11,8 @@
 #define HAL_UART_MODULE_ENABLED
 #define HAL_DMA_MODULE_ENABLED      /* Fixed: Properly matched with include below */
 #define HAL_FLASH_MODULE_ENABLED
+#define HAL_PWR_MODULE_ENABLED 
+
 
 /* ========================================================================== */
 /* 2. Hardware / Oscillator Values                                            */
@@ -71,3 +73,7 @@
   #include "stm32f4xx_hal_flash.h"
 #endif
 
+#ifdef HAL_PWR_MODULE_ENABLED
+  #include "stm32f4xx_hal_pwr.h"
+  #include "stm32f4xx_hal_pwr_ex.h"
+#endif
