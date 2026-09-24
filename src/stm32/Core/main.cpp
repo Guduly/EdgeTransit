@@ -11,8 +11,8 @@ extern "C" {
     }
 }
 
-int main(){
-    return 0; 
+int main(void){
+    HAL_Init(); 
 }
 
 
