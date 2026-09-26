@@ -113,10 +113,13 @@ int main(void) {
         // No copy — same memory, different type interpretation
         float* features = reinterpret_cast<float*>(rx_buf);
 
-        // Run MLP forward pass
+        int32_t start = HAL_GetTick(); 
         result = (uint8_t)predict(features);
+       
+        int32_t elapsed = HAL_GetTick() - start; 
 
         // Send predicted class back (0=On-Time, 1=Late, 2=Severely Late)
         HAL_UART_Transmit(&huart2, &result, 1, HAL_MAX_DELAY);
+        HAL_UART_Transmit(&huart2, (uint8_t*)&elapsed, 4, HAL_MAX_DELAY);
     }
 }
