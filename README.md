@@ -153,4 +153,4 @@ python -m src.uart.stream --port /dev/ttyACM0
 - [x] Matrix Mult for Prediction
 - [x] STM32 Config (UART + GPIO)
 - [x] Makefile Config
-- [ ] UART streaming + MCU validation
+- [X] UART streaming + MCU validation
